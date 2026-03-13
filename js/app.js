@@ -114,6 +114,26 @@ document.addEventListener('DOMContentLoaded', () => {
         const badges = ['🔥 OFERTA', '💰 MENOR PREÇO', '✨ DESTAQUE'];
         const badgeText = badges[ratingId % badges.length];
 
+        const titleLower = prod.title.toLowerCase();
+        const onlyMercadoLivre = titleLower.includes('apenas mercado livre') || titleLower.includes('mercado livre apenas');
+        const onlyShopee = titleLower.includes('apenas shopee') || titleLower.includes('shopee apenas');
+
+        let shopeeBtnHtml = '';
+        if (!onlyMercadoLivre && prod.shopeeLink) {
+            shopeeBtnHtml = `
+                    <a href="${prod.shopeeLink}" target="_blank" rel="noopener noreferrer" class="btn btn-shopee" onclick="window.incrementViews(${prod.id})">
+                        🟠 Comprar na Shopee
+                    </a>`;
+        }
+
+        let mlBtnHtml = '';
+        if (!onlyShopee && prod.mercadoLivreLink) {
+            mlBtnHtml = `
+                    <a href="${prod.mercadoLivreLink}" target="_blank" rel="noopener noreferrer" class="btn btn-ml" onclick="window.incrementViews(${prod.id})">
+                        🟡 Ver oferta no Mercado Livre
+                    </a>`;
+        }
+
         return `
         <article class="product-card" data-category="${prod.category}">
             <div class="product-img-wrapper">
@@ -132,13 +152,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     ${priceHtml}
                 </div>
                 
-                <div class="product-actions">
-                    <a href="${prod.shopeeLink}" target="_blank" rel="noopener noreferrer" class="btn btn-shopee" onclick="window.incrementViews(${prod.id})">
-                        🟠 Comprar na Shopee
-                    </a>
-                    <a href="${prod.mercadoLivreLink}" target="_blank" rel="noopener noreferrer" class="btn btn-ml" onclick="window.incrementViews(${prod.id})">
-                        🟡 Ver oferta no Mercado Livre
-                    </a>
+                <div class="product-actions">${shopeeBtnHtml}${mlBtnHtml}
                 </div>
                 <div class="card-disclaimer" style="font-size: 0.75rem; text-align: center; margin-top: 10px; color: var(--text-muted, #777); opacity: 0.8;">
                     * Apenas indicamos produtos. Compras feitas nas lojas oficiais.
