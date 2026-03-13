@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Os melhores achados e ofertas da internet! Confira nossos links de afiliados da Shopee e Mercado Livre.">
+    <title>Kauan Achados | Melhores Ofertas e Descontos</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <i class='bx bx-shopping-bag'></i>
+                <span>Kauan Achados</span>
+            </a>
+            <div class="nav-links">
+                <a href="#ofertas-semanais">Destaques</a>
+                <a href="#categorias">Categorias</a>
+                <a href="#produtos">Todos os Produtos</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="destaques">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="badge">🔥 Melhores Ofertas do Kauan Achados</div>
+                    <h1>Descubra os Melhores <span>Achados</span> da Internet</h1>
+                    <p>Curadoria especial de produtos incríveis com os melhores preços da Shopee e Mercado Livre.
+                        Atualizamos o site semanalmente!</p>
+                    <a href="#produtos" class="btn btn-primary">Ver Produtos <i class='bx bx-right-arrow-alt'></i></a>
+                </div>
+                <div class="hero-image">
+                    <!-- Glassmorphism floating card -->
+                    <div class="glass-card floating">
+                        <img src="./mascote.png" alt="Mascote Kauan Achados">
+                        <div class="glass-card-info">
+                            <span class="tag">Mais Vendido</span>
+                            <h4>Ofertas Exclusivas Kauan Achados</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6 Ofertas da Semana -->
+        <section class="products section" id="ofertas-semanais" style="padding-top: 3rem;">
+            <div class="container">
+                <div class="section-header">
+                    <h2>🔥 Top 6 Ofertas da Semana</h2>
+                    <p>Os produtos mais procurados com preços imbatíveis</p>
+                </div>
+                <div class="product-grid" id="top-ofertas-container">
+                    <!-- Offers will be injected here via JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Categories Section -->
+        <section class="categories section" id="categorias">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Navegue por Categorias</h2>
+                    <p>Encontre exatamente o que você procura</p>
+                </div>
+                <div class="categories-grid" id="categories-container">
+                    <!-- Categories will be injected here via JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Grid Section -->
+        <section class="products section bg-light" id="produtos">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Produtos em Destaque</h2>
+                    <p>Os itens mais procurados e bem avaliados da semana no Kauan Achados</p>
+                </div>
+
+                <!-- Search Bar -->
+                <div class="search-container">
+                    <i class='bx bx-search'></i>
+                    <input type="text" id="search-input" placeholder="Buscar por produto, marca, categoria..."
+                        autocomplete="off">
+                </div>
+
+                <!-- Filters -->
+                <div class="filters">
+                    <button class="filter-btn active" data-filter="all">Todos</button>
+                    <!-- Category filters injected via JS -->
+                </div>
+
+                <!-- Subcategory Filters -->
+                <div class="subcategory-filters" id="subcategory-filters" style="display: none;">
+                    <!-- Subcategory buttons injected via JS -->
+                </div>
+
+                <div class="product-grid" id="product-container">
+                    <!-- Products will be injected here via JS -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a href="#" class="logo">
+                    <i class='bx bx-shopping-bag'></i>
+                    <span>Kauan Achados</span>
+                </a>
+                <p>O seu guia de compras inteligente na internet. Encontre os melhores eletrônicos e mais.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Links Úteis</h3>
+                <ul>
+                    <li><a href="#destaques">Início</a></li>
+                    <li><a href="#produtos">Produtos</a></li>
+                    <li><a href="#categorias">Categorias</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Siga-nos</h3>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/achadosdokauantech?igsh=MTJkY3AzcnducXRtbQ%3D%3D&utm_source=qr"
+                        target="_blank"><i class='bx bxl-instagram'></i></a>
+                    <a href="#"><i class='bx bxl-tiktok'></i></a>
+                    <a href="https://whatsapp.com/channel/0029Vb8AtzT72WTyGrt8Cc2x" target="_blank"><i
+                            class='bx bxl-whatsapp'></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Kauan Achados. Todos os direitos reservados. Este site contém links de afiliados.</p>
+            <p
+                style="font-size: 0.85rem; margin-top: 1rem; opacity: 0.8; max-width: 800px; margin-left: auto; margin-right: auto; line-height: 1.5; padding: 0 1rem;">
+                Aviso: O Kauan Achados apenas compartilha recomendações de produtos e links de afiliados. Não vendemos,
+                entregamos ou participamos do processo de compra. Todas as compras são feitas diretamente na Shopee ou
+                no Mercado Livre. Os preços e a disponibilidade podem mudar. Os produtos são atualizados semanalmente.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="./js/data.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
