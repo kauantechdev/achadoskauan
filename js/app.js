@@ -1,5 +1,35 @@
 document.addEventListener('DOMContentLoaded', () => {
 
+    // Mobile Menu Logic
+    const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+    const navLinks = document.querySelector('.nav-links');
+    
+    if (mobileMenuBtn && navLinks) {
+        mobileMenuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            const icon = mobileMenuBtn.querySelector('i');
+            if (navLinks.classList.contains('active')) {
+                icon.classList.remove('bx-menu');
+                icon.classList.add('bx-x');
+            } else {
+                icon.classList.remove('bx-x');
+                icon.classList.add('bx-menu');
+            }
+        });
+
+        const links = navLinks.querySelectorAll('a');
+        links.forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                const icon = mobileMenuBtn.querySelector('i');
+                if (icon) {
+                    icon.classList.remove('bx-x');
+                    icon.classList.add('bx-menu');
+                }
+            });
+        });
+    }
+
     window.incrementViews = function(productId) {
         let views = parseInt(localStorage.getItem('product_views_' + productId));
         if (isNaN(views)) {
