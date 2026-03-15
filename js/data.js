@@ -567,7 +567,7 @@ const products = [
         id: 56,
         title: "Conjunto Panelas Antiaderente 10 Peças Teflon Várias Cores (Apenas Mercado Livre)",
         image: "https://http2.mlstatic.com/D_NQ_NP_2X_974219-MLB75860517636_042024-F-conjunto-panelas-antiaderente-10-pecas-teflon-varias-cores.webp",
-        price: "R$ 199,90",
+        price: "R$ 199,90 à 229,90",
         category: "casa",
         subcategory: "Cozinha",
         shopeeLink: "https://meli.la/1HYDZRQ",
