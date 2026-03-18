@@ -1465,13 +1465,13 @@ const products = [
     },
     {
         id: 145,
-        title: "Tenis Corrida Olympikus Corre 4 Lançamento Original (Apenas Mercado Livre)",
-        image: "https://http2.mlstatic.com/D_NQ_NP_2X_739316-MLB95623611790_102025-F-tenis-corrida-olympikus-corre-4-lancamento-original.webp",
-        price: "R$ 577,36 à 749,88",
+        title: "Tênis Olympikus Pride 4 - Solado Corre 4 (Apenas Mercado Livre)",
+        image: "https://http2.mlstatic.com/D_NQ_NP_2X_907580-MLB99468913821_112025-F-tnis-olympikus-pride-4-solado-corre-4.webp",
+        price: "R$ 288,80 à 399,90",
         category: "tenis",
         subcategory: "Corrida",
-        shopeeLink: "https://meli.la/1UshGrq",
-        mercadoLivreLink: "https://meli.la/1UshGrq"
+        shopeeLink: "https://meli.la/26rPwfd",
+        mercadoLivreLink: "https://meli.la/26rPwfd"
     },
     {
         id: 146,
